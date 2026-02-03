@@ -1,0 +1,62 @@
+@font-face{
+    font-family: "Love";
+    src: url(./fonts/Love.ttf);
+
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(251, 251, 251);
+    font-family: "Love", sans-serif;
+
+
+}
+.btn {
+    display: flex;
+    gap: 50px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+.oui {
+    background-color: rgb(24, 149, 168);
+    transition: width 0.5s, height 0.5s, font-size 0.5s;
+
+}
+.non {
+    background-color: rgb(220, 53, 69);
+}
+h1{
+ text-transform: uppercase;
+ font-size: 40px;
+    color: rgb(175, 146, 51);
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
