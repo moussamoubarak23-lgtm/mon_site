@@ -1,6 +1,6 @@
 @font-face{
     font-family: "Love";
-    src: url(./fonts/Love.ttf);
+    src: url("Love.ttf") ;
 
 }
 
@@ -13,6 +13,7 @@ body{
     flex-wrap: wrap;
     background-color: rgb(251, 251, 251);
     font-family: "Love", sans-serif;
+    height: 100vh;
 
 
 }
@@ -41,6 +42,11 @@ h1{
  text-transform: uppercase;
  font-size: 40px;
     color: rgb(175, 146, 51);
+}
+h2{
+ text-transform: lowercase;
+ font-size: 40px;
+    color: rgb(175, 51, 72);
 }
 .back-video{
     position: absolute;
